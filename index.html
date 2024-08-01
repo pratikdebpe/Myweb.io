@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Project </title>
+    <link rel="stylesheet" href="style.css">      <!-- this line coonect css with html -->
+    <script src="https://kit.fontawesome.com/649cd437d2.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="header">     <!-- various types of caling technique are there,it is an id , with this id we can call from css file with the help of '#header'-->
+        <div class="container">
+            <nav>     <!-- this fo navigation bar under this all  the code wrk for navigation bar-->
+                <img src="images/logo.png" class="logo">  <!-- this is for logo in upper left side-->
+                <ul id="sidemenu">             <!-- this is for un ordered list in the navigtion bar-->
+                    <li><a href="https://pratikdebpe.github.io/Myweb.github.io/" target="blank">Home</a></li>     <!-- here we use a tag because Home, About,Service etc are hyperlink text -->
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p> <!-- p tag to write paragraph--> Web Developer </p>
+                <h1> Hi, I'm <span>Pratik</span><br>Deb from NITA</h1> <!-- we use span to make 'Pratik' red particularly-->
+            </div>
+        </div>
+    </div>
+
+<!----------------------------About------------------------------->
+
+    <div id="about"> <!-- create a new division for about-->
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png"> <!-- later i will add my image-->
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>
+                        Hello , I am a final-year undergraduate student at National Institute of Technology Agartala, i am Passionate about technology. I thrive on creating innovative solutions, my skills include C++, SQL, Python, machine learning, and data structure, web development. My dedication to growth and perfection drives me to take on new challenges and contribute meaningfully to any project or organization I am part of.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">skills</p>  <!-- this onclick will help when we click any button like sills or experience it displays the content of skills-->
+                        <p class="tab-links" onclick="opentab('experience')">experience</p>
+                        <p class="tab-links" onclick="opentab('education')">education</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills"><!-- we are adding 2nd class name  that is 'active-tab'-->
+                        <ul>   <!-- later i will add more skills under skil section -->
+                            <li><span>Programming skill</span><br>C++ , Python</li>
+                            <li><span>Technical skill</span><br>Power Point, Excel, Word</li>
+                            <li><span>Soft skill</span><br>Good Communication, Team Player ,Problem Solving , Time Management, Leadership</li>
+                        </ul>  
+                    </div>
+                    <div class="tab-contents"  id="experience"> <!-- this id will help us to conncet the tab-titles->p tag -> onclick with button -->
+                        <ul>   <!-- later i will add more experience under skil section -->
+                            <li><span>Data analyst Intern at TAW Academy</span><br>Developed and maintained databases to track key metrics, ensuring data accuracy and integrity.
+                                Collaborated with the team to identify trends and areas for improvement, providing actionable
+                                recommendations to drive business growth.</li>
+                            <li><span>Winter Trainee at ONGC Agartala Asset</span><br>Onshore Exploration of Drilling, gained valuable hands-on experience in overseeing and
+                                managing drilling operations.</li>
+                            <li><span>BCGX virtual intern</span><br>Gained hands-on experience in cutting-edge technologies and innovative solutions.
+                                Developed valuable skills in data analysis, problem-solving, and collaboration, working on
+                                real-world projects and receiving mentorship from industry experts</li>
+                        </ul>  
+                    </div>
+                    <div class="tab-contents"  id="education">
+                        <ul>   <!-- later i will add more Education under skil section -->
+                            <li><span>National Institute of Technology Agartala</span><br>B.Tech in Electronics and Instrumentation Engineering</li>
+                            <li><span>Shishu Niketan H.S School</span><br>Tripura Board of Higher Secondary Education</li>
+                            <li><span>Shishu Niketan H.S School</span><br>Tripura Board of Secondary Education</li>
+                        </ul>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-----------------------------services------------------------------>
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services_list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Developer</h2>
+                <p>As a dedicated web developer, I offer a range of services tailored to meet your unique needs.From crafting responsive and visually appealing websites to ensuring seamless functionality and user experience, I specialize in both front-end development. My expertise includes HTML, CSS, JavaScript, and modern frameworks, enabling me to build dynamic, interactive web applications. Whether you need a personal portfolio, an e-commerce platform, or a complex web solution. customized results that align with your vision and business goals. </p>
+                <!--here in the p tag i can write my own dercsiption about web evelopment-->
+                <a href="https://drive.google.com/file/d/1vVL2gh-ap38YCAbPdhfm4Lko--R2llwH/view?usp=sharing" target="blank">learn more and view certificates</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                <h2>Data Scientiest</h2>
+                <p>As a proficient data scientist, I provide a range of services designed to help you make data-driven decisions and unlock valuable insights. With expertise in data cleaning, statistical analysis, machine learning, and data visualization, I can turn raw data into actionable strategies. Whether you need predictive modeling, trend analysis, or comprehensive data reports, my goal is to deliver high-quality, customized solutions that drive your business forward and support your strategic objectives.</p>
+                <!--here in the p tag i can write my own dercsiption about data scientiest-->
+                <a href="https://drive.google.com/file/d/1lXsny_5IPeKN5M-lB_gxjD4kv2rAr4W7/view?usp=sharing" target="blank">learn more and view certificates</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-chart-simple"></i>
+                <h2>Data analyst</h2>
+                <p>As a data analyst, I provide comprehensive services to help you make sense of your data and drive informed decisions. My expertise includes data cleaning, statistical analysis, and data visualization, allowing me to identify trends, uncover insights, and present findings clearly and effectively. Whether you need detailed reports, interactive dashboards, or in-depth analysis, I am committed to delivering high-quality, customized solutions that meet your business needs and support your strategic objectives.</p>
+                <!--here in the p tag i can write my own dercsiption about data analyst-->
+                <a href="https://drive.google.com/file/d/1olWFPaGSvc9KWPEUtEk4m5ZhuaEHIKE5/view?usp=sharing" target="blank">learn more and view certificates</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--------------------------- portfolio --------------------------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Works</h1> 
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>E-commerce sales analysis</h3>
+                    <p>I recently completed an exciting project on E-commerce sales analysis, which provided deep insights into the factors driving sales performance. By leveraging advanced data analytics techniques, I examined key metrics such as customer demographics, purchasing patterns, seasonal trends, and product performance. The project involved cleaning and preprocessing vast datasets, conducting detailed statistical analysis, and creating dynamic visualizations to present findings clearly.</p>
+                    <a href="https://drive.google.com/file/d/1hjK3OdtVu7DevGqoqP-_jBt-lPLAogeU/view?usp=sharing" target="blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+
+                </div>
+            </div> 
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Portfolio Website</h3>
+                    <p>I recently completed my portfolio website, showcasing my skills and projects in web development and data science.It includes detailed case studies of my work, including an E-commerce sales analysis project, providing visitors with a comprehensive view of my capabilities and accomplishments. This portfolio not only demonstrates my technical proficiency but also serves as a platform for potential clients and employers to connect with me.</p>
+                    <a href="https://pratikdebpe.github.io/Myweb.github.io/" target="blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+
+                </div>
+           </div> 
+           <!--<div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>online shopping  app</h3>
+                    <p>Hello , I am a final-year undergraduate student at National Institute of Technolo</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+
+                </div>
+            </div> ----------->
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!------------------------------contact-------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i> pratikdebpe@gmail.com</p>
+                <p> <i class="fa-solid fa-square-phone"></i> 7085683741</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/ppratik.deb.7" target="blank"><i class="fa-brands fa-facebook"></i></a> <!-- here we add multiple social media link-->
+                    <a href="https://www.linkedin.com/in/pratik-deb-838028228/" target="blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/im_pratik_dev/?hl=en" target="blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+                 
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>made by <i class="fa-solid fa-copyright"></i>Pratik dev</p>
+    </div>
+</div>
+
+<script>   /* this will add java script to our html */
+
+    var tablinks = document.getElementsByClassName("tab-links")     /* we are making two variable in java script*/
+    var tabcontents = document.getElementsByClassName("tab-contents")
+    
+    function opentab(tabname){/* here we define the funtion "opentab"*/
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        } 
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        } /* this 2 for loop are use to remove the content of skills when we click on skill tab*/
+        event.currentTarget.classList.add("active-link"); /* this will work when we click on any tab it displays red underline link for the tab*/
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx16y1IiwlVfw4gTqRl9Q7jBgSvmgF-ljj1dVjCPhGdjlf3ZLk-qTyThI81FCFvfS-Q/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
