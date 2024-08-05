@@ -181,7 +181,7 @@ nav ul li a:hover::after{ /* this wil help when we take curser to the name ot ho
 .services_list div a{
     text-decoration: none;
     color: #fff;
-    font-size: 12px;
+    font-size: 18px;
     margin-top: 20px;
     display: inline-block;
 }
